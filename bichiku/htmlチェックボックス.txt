@@ -1,0 +1,40 @@
+<div>
+                       <tr>
+                           <th style="border:none;"><input type="checkbox" name="os" value="win7">���Ⴊ����</th>
+                           <th style="border:none;"> <input type="checkbox" name="os" value="win8">�T�c�}�C��</th>
+                       </tr>
+                       <tr>
+                           <td style="border:none;"><input type="checkbox" name="os" value="win10">����</td>
+                           <td style="border:none;"><input type="checkbox" name="os" value="mac">�^���C��</td>
+                       </tr>
+                       <tr>
+                           <td style="border:none;"><input type="checkbox" name="os" value="linux">������q</td>
+                           <td style="border:none;"><input type="checkbox" name="os" value="linux">������q</td>
+                        </tr>
+                        <tr>
+                           <td style="border:none;"><input type="checkbox" name="os" value="linux">������q</td>
+                           <td style="border:none;"><input type="checkbox" name="os" value="linux">�r�X�R</td>
+                        </tr>
+                           <td style="border:none;"><input type="checkbox" name="os" value="linux">������q</td>
+                           <td style="border:none;"><input type="checkbox" name="os" value="linux">������q</td>
+                       </tr>
+                       <tr>
+                        <th style="border:none;"><input type="checkbox" name="os" value="win7">���Ⴊ����</th>
+                        <th style="border:none;"> <input type="checkbox" name="os" value="win8">�T�c�}�C��</th>
+                    </tr>
+                    <tr>
+                        <td style="border:none;"><input type="checkbox" name="os" value="win10">����</td>
+                        <td style="border:none;"><input type="checkbox" name="os" value="mac">�^���C��</td>
+                    </tr>
+                    <tr>
+                        <td style="border:none;"><input type="checkbox" name="os" value="linux">������q</td>
+                        <td style="border:none;"><input type="checkbox" name="os" value="linux">������q</td>
+                     </tr>
+                     <tr>
+                        <td style="border:none;"><input type="checkbox" name="os" value="linux">������q</td>
+                        <td style="border:none;"><input type="checkbox" name="os" value="linux">������q</td>
+                     </tr>
+                       </div>
+
+
+                       <p id="testResult">not found</p>
