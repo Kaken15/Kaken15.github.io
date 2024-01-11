@@ -1,6 +1,8 @@
-
+//全部の備蓄品チェックリストを取得して、変数に格納
 const checkboxes=document.getElementsByClassName("checks");
+//結果表示のボタンを取得して、変数に格納
 const btn=document.getElementById("btn");
+//
 const resultsDiv=document.getElementById("results");
 const getUncheckedValues=()=>{
     var uncheckedValues = [];
