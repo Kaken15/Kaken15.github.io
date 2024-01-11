@@ -23,12 +23,12 @@ const getUncheckedValues=()=>{
         alert("Allcheckboxes are checked.");
     }
 };
-
+//結果表示のボタンを押されたとき、getuncheckedValues関数を呼び出す
 btn.addEventListener("click",getUncheckedValues,false);
 
 
 
-
+//未チェックの値をローカルストレージに保存し、"結果表示.html"へのリダイレクトを行う
 function ResultButton(value1)
 {
     localStorage.setItem('checkedItems', value1);
