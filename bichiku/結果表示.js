@@ -26,17 +26,24 @@ for (var i = 0; i < value1.length; i++) {
      listRoot.appendChild(amznLink);
 }
 
-function buttonClick(){
-        let str = "HelloWorld!\r\nこんにちは世界！\r\n"; // 出力文字列
-        let ary = str.split(''); // 配列形式に変換（後述のBlobで全要素出力）
-        let blob = new Blob(ary,{type:"text/plan"}); // テキスト形式でBlob定義
-        let link = document.createElement('a'); // HTMLのaタグを作成
-        link.href = URL.createObjectURL(blob); // aタグのhref属性を作成
-        link.download = 'test.txt'; // aタグのdownload属性を作成
-        link.click(); // 定義したaタグをクリック（実行）
-      }
-      
-      function buttonClick2(){
-        // 読み込んだ文字列を表示
-        document.getElementById("html").innerHTML = str2;
-      }
+document.getElementById('dlbtn').addEventListener('click', () => {
+  // JSON ファイルを表す Blob オブジェクトを生成
+  const json = JSON.stringify({ a: 1, b: 2, c: 3 }, null, '  ');
+  const blob = new Blob([json], { type: 'application/json' });
+ 
+  // ダミーの a 要素を生成して body 要素の最後に追加
+  let dummy_a_el = document.createElement('a');
+  document.body.appendChild(dummy_a_el);
+ 
+  // a 要素の href 属性に Object URL をセット
+  dummy_a_el.href = window.URL.createObjectURL(blob);
+ 
+  // a 要素の download 属性にファイル名をセット
+  dummy_a_el.download = 'test.json';
+ 
+  // 疑似的に a 要素をクリックさせる
+  dummy_a_el.click();
+ 
+  // a 要素を body 要素から削除
+  document.body.removeChild(dummy_a_el);
+});
