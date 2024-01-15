@@ -26,31 +26,44 @@ for (var i = 0; i < value1.length; i++) {
      listRoot.appendChild(amznLink);
 }
 
-$(function(){
-  // 削除処理
-  $("#delete").on("click", function(){
-    localStorage.clear();
-    showList();
-  });
-  
-  // 保存処理
-  $("#save").on("click", function(){
-    localStorage.setItem(localStorage.length.toString(), $("#todo").val());
-    $("#todo").val("");
-    showList();
-  });
+function copyToClipboard() {
+      const urlToCopy = window.location.href;
+      
+      // スマートフォンの場合はテキストエリアを作成してはならないため、代替手段を使います
+      navigator.clipboard.writeText(urlToCopy)
+        .then(() => alert('URL copied to clipboard!'))
+        .catch(err => console.error('Unable to copy to clipboard', err));
+    }
 
-  showList();
-});
+    function saveToFile() {
+      const urlToSave = window.location.href;
 
-function showList() {
-  $("#list").html("");
-  for (let i = 0; i < localStorage.length; i++) {
-    $("#list").append("<li class='list-group-item'><button class='btn btn-danger mr-2' onclick='deleteItem("+ localStorage.key(i) +")'><i class='fas fa-trash-alt'></i></button>" + localStorage.getItem(localStorage.key(i)) + "</li>");
-  }
-}
+      // Blobを作成し、ファイルに保存する
+      const blob = new Blob([urlToSave], { type: 'text/html' });
+      const a = document.createElement('a');
 
-function deleteItem(i) {
-  localStorage.removeItem(i);
-  showList();
-}
+      // ユーザーエージェントを取得
+      const userAgent = navigator.userAgent.toLowerCase();
+
+      // スマートフォンの場合は新しいタブで開く
+      if (userAgent.includes('iphone') || userAgent.includes('android')) {
+        a.target = '_blank'; // スマートフォンの場合は新しいタブで開く
+      }
+
+      // スマートフォンでは自動的にダウンロードが起こりにくいため、ユーザーアクションを待つ
+      a.href = URL.createObjectURL(blob);
+      a.download = 'url.html';
+      
+      // ユーザーアクションを待つ
+      document.body.addEventListener('click', () => {
+        document.body.removeChild(a);
+      });
+
+      document.body.appendChild(a);
+
+      if (userAgent.includes('iphone') || userAgent.includes('android')) {
+        alert('Please click the link to download the HTML file.');
+      } else {
+        a.click(); // パソコンの場合は自動的にクリックしてダウンロード
+      }
+    }
