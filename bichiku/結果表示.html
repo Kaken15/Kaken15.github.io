@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head><meta charset="UTF-8">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>避難準備</title>
-        <link rel="stylesheet" href="結果表示.js">
-        
     </head>
     <body>
         <p id="testResult">not found</p>
@@ -20,16 +20,8 @@
         <p>
             <a href="pet.html">ペット用</a>
         </p>
-       <div class="container m-3 p-4 shadow rounded">
-      <h2><i class="fas fa-child"></i> todos <i class="fas fa-child"></i></h2>
-      <div class="form-inline mb-3">
-        <input type="text" class="form-control w-50" id="todo" placeholder="input todo..." />
-        <button class="btn btn-primary ml-2" id="save">save</button>
-        <button class="btn btn-danger ml-2" id="delete">delete all</button>
-      </div>
-      <ul class="list-group" id="list">
-      </ul>
-    </div>
+        <button onclick="copyToClipboard()">Copy URL to Clipboard</button>
+        <button onclick="saveToFile()">Save URL to HTML File</button>
   
         <script src="結果表示.js"></script>
     </body>
