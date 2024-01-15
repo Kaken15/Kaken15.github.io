@@ -26,3 +26,22 @@ for (var i = 0; i < value1.length; i++) {
      listRoot.appendChild(amznLink);
 }
 
+// データを保存するためのテキスト
+const dataToSave = "保存したいデータです。";
+
+// バイナリデータへの変換
+const blob = new Blob([dataToSave], { type: 'text/plain' });
+
+// ファイル名
+const fileName = '保存ファイル.txt';
+
+// a要素を作成し、ダウンロードリンクとして設定
+const a = document.createElement('a');
+a.href = window.URL.createObjectURL(blob);
+a.download = fileName;
+
+// クリックしてダウンロードを開始
+a.click();
+
+// リソース解放のためにURLオブジェクトを解放
+window.URL.revokeObjectURL(a.href);
