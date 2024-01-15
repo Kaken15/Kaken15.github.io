@@ -7,7 +7,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.text-container{
+body{
     border: 30Px solid red;
     padding: 40px;
     display: inline-block;
