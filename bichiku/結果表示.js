@@ -26,24 +26,31 @@ for (var i = 0; i < value1.length; i++) {
      listRoot.appendChild(amznLink);
 }
 
-document.getElementById('dlbtn').addEventListener('click', () => {
-  // JSON ファイルを表す Blob オブジェクトを生成
-  const json = JSON.stringify({ a: 1, b: 2, c: 3 }, null, '  ');
-  const blob = new Blob([json], { type: 'application/json' });
- 
-  // ダミーの a 要素を生成して body 要素の最後に追加
-  let dummy_a_el = document.createElement('a');
-  document.body.appendChild(dummy_a_el);
- 
-  // a 要素の href 属性に Object URL をセット
-  dummy_a_el.href = window.URL.createObjectURL(blob);
- 
-  // a 要素の download 属性にファイル名をセット
-  dummy_a_el.download = 'test.json';
- 
-  // 疑似的に a 要素をクリックさせる
-  dummy_a_el.click();
- 
-  // a 要素を body 要素から削除
-  document.body.removeChild(dummy_a_el);
+$(function(){
+  // 削除処理
+  $("#delete").on("click", function(){
+    localStorage.clear();
+    showList();
+  });
+  
+  // 保存処理
+  $("#save").on("click", function(){
+    localStorage.setItem(localStorage.length.toString(), $("#todo").val());
+    $("#todo").val("");
+    showList();
+  });
+
+  showList();
 });
+
+function showList() {
+  $("#list").html("");
+  for (let i = 0; i < localStorage.length; i++) {
+    $("#list").append("<li class='list-group-item'><button class='btn btn-danger mr-2' onclick='deleteItem("+ localStorage.key(i) +")'><i class='fas fa-trash-alt'></i></button>" + localStorage.getItem(localStorage.key(i)) + "</li>");
+  }
+}
+
+function deleteItem(i) {
+  localStorage.removeItem(i);
+  showList();
+}
