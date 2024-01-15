@@ -26,22 +26,17 @@ for (var i = 0; i < value1.length; i++) {
      listRoot.appendChild(amznLink);
 }
 
-// データを保存するためのテキスト
-const dataToSave = "保存したいデータです。";
-
-// バイナリデータへの変換
-const blob = new Blob([dataToSave], { type: 'text/plain' });
-
-// ファイル名
-const fileName = '保存ファイル.txt';
-
-// a要素を作成し、ダウンロードリンクとして設定
-const a = document.createElement('a');
-a.href = window.URL.createObjectURL(blob);
-a.download = fileName;
-
-// クリックしてダウンロードを開始
-a.click();
-
-// リソース解放のためにURLオブジェクトを解放
-window.URL.revokeObjectURL(a.href);
+function buttonClick(){
+        let str = "HelloWorld!\r\nこんにちは世界！\r\n"; // 出力文字列
+        let ary = str.split(''); // 配列形式に変換（後述のBlobで全要素出力）
+        let blob = new Blob(ary,{type:"text/plan"}); // テキスト形式でBlob定義
+        let link = document.createElement('a'); // HTMLのaタグを作成
+        link.href = URL.createObjectURL(blob); // aタグのhref属性を作成
+        link.download = 'test.txt'; // aタグのdownload属性を作成
+        link.click(); // 定義したaタグをクリック（実行）
+      }
+      
+      function buttonClick2(){
+        // 読み込んだ文字列を表示
+        document.getElementById("html").innerHTML = str2;
+      }
