@@ -1,1 +1,14 @@
-
+body{
+    background-color:#ecb856;
+}
+body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.text-container{
+    border: 30Px solid rgb(255, 0, 221);
+    padding: 40px;
+    display: inline-block;
+}
