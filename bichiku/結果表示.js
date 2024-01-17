@@ -56,7 +56,9 @@ function copyToClipboard() {
       
       // ユーザーアクションを待つ
       document.body.addEventListener('click', () => {
+         setTimeout(() => {
         document.body.removeChild(a);
+         },0);
       });
 
       document.body.appendChild(a);
