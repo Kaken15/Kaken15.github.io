@@ -7,7 +7,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-p,ul,button{
+body{
     border: 30Px solid rgb(255, 251, 40);
     padding: 40px;
     display: inline-block;
