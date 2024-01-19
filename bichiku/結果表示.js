@@ -7,8 +7,6 @@ let value1 = local;
 //value1という配列の中身をコンマで分割。(これにより、配列として各項目に分かれたデータを得る)
 value1 = value1.split(',');
 console.log('受け取った値:', value1);
-//html上にあるtestResultの要素にvalue1という配列を入れる
-document.getElementById("testResult").innerText = value1;
 
 // ループを使って、配列 value1の各要素に対して処理を行う
 for (var i = 0; i < value1.length; i++) {
