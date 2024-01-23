@@ -1,13 +1,13 @@
-:not(jmg){
+body:not(jmg){
     background-color:#f7e8cd;
 }
-body {
+body:not(jmg) {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-body{
+body:not(jmg){
     border: 30Px solid rgb(94, 255, 0);
     padding: 40px;
     display: inline-block;
