@@ -13,7 +13,7 @@ body {
     padding: 40px;
 }
 #content {
-            width: 100％; /* ビューポートの幅に合わせる */
+            width: 100vw; /* ビューポートの幅に合わせる */
             height: 100vh; /* ビューポートの高さに合わせる */
             background-color: #f7e8cd;
             display: flex;
