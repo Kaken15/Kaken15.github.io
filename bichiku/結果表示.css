@@ -12,3 +12,6 @@ body{
     padding: 40px;
     display: inline-block;
 }
+#list {
+    white-space: nowrap;
+}
