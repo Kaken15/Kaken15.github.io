@@ -1,3 +1,11 @@
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.container {
+  overflow: auto;
+}
 body{
     background-color:#f7e8cd;
 }
