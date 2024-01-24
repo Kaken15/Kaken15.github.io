@@ -2,20 +2,17 @@ body, html {
     margin: 0;
     padding: 0;
 }
-body{
-    background-color:#f7e8cd;
-}
+
 body {
+    background-color: #f7e8cd;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-body{
-    border: 30Px solid rgb(255, 251, 40);
+    border: 30px solid rgb(255, 251, 40);
     padding: 40px;
-    display: inline-block;
 }
+
 #list {
     white-space: nowrap;
 }
