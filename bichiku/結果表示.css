@@ -1,4 +1,7 @@
-
+"overflow": (
+      property: overflow,
+      values: auto hidden visible scroll,
+    ),
 body{
     background-color:#f7e8cd;
 }
