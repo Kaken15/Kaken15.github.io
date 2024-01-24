@@ -73,7 +73,7 @@ const quiz_judge = function(){
             
         }
         
-        
+        document.write('<img src="https://www.sejuku.net/blog/wp-content/uploads/2017/10/voice_logo.png" alt="画像の解説文">')
     });
     }
 }
