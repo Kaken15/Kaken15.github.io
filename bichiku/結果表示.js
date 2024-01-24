@@ -1,3 +1,13 @@
+// ウィンドウサイズが変更されたときにコンテンツのサイズを調整する
+        window.addEventListener('resize', function () {
+            const content = document.getElementById('content');
+            content.style.width = window.innerWidth + 'px';
+            content.style.height = window.innerHeight + 'px';
+        });
+
+        // 初期表示時にもサイズを設定
+        window.dispatchEvent(new Event('resize'));
+
 //ローカルストレージからcheckedItemsのデータを取得して、local変数に格納
 let local = localStorage.getItem('checkedItems');
 //取得したローカルストレージのデータをコンソールに表示
