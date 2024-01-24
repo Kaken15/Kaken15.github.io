@@ -19,6 +19,9 @@ body {
             display: flex;
             align-items: center;
             justify-content: center;
+
+            top: 0; /* 上端に配置 */
+            left: 0; /* 左端に配置 */
         }
 #list {
     white-space: nowrap;
