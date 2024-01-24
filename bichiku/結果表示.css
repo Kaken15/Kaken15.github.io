@@ -9,7 +9,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border: 30px solid rgb(255, 251, 40);
+    border: 30px solid rgb(94, 251, 0);
     padding: 40px;
 }
 #content {
