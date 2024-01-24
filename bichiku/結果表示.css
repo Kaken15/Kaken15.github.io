@@ -1,6 +1,7 @@
 body, html {
     margin: 0;
     padding: 0;
+    height: 100%; /* 追加: ボディとHTML要素を高さ100%に設定 */
 }
 
 body {
@@ -12,17 +13,19 @@ body {
     border: 30px solid rgb(255, 251, 40);
     padding: 40px;
 }
-#content {
-            width: 100vw; /* ビューポートの幅に合わせる */
-            height: 100vh; /* ビューポートの高さに合わせる */
-            background-color: #f7e8cd;
-            display: flex;
-            align-items: center;
-            justify-content: center;
 
-            top: 0; /* 上端に配置 */
-            left: 0; /* 左端に配置 */
-        }
+#content {
+    width: 100%; /* ビューポートの幅に合わせる */
+    height: 100vh; /* ビューポートの高さに合わせる */
+    background-color: #f7e8cd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed; /* 追加: 画面上に固定 */
+    top: 0;
+    left: 0;
+}
+
 #list {
     white-space: nowrap;
 }
