@@ -1,27 +1,24 @@
 body, html {
     margin: 0;
     padding: 0;
-    height: 100%; /* 追加: ボディとHTML要素を高さ100%に設定 */
+    height: 100%;
 }
 
 body {
     background-color: #f7e8cd;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative; /* positionをrelativeに変更 */
     border: 30px solid rgb(255, 251, 40);
     padding: 40px;
 }
 
 #content {
-    width: 100%; /* ビューポートの幅に合わせる */
-    height: 100vh; /* ビューポートの高さに合わせる */
+    width: 100vw;
+    height: 100vh;
     background-color: #f7e8cd;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: fixed; /* 追加: 画面上に固定 */
+    position: absolute; /* positionをabsoluteに変更 */
     top: 0;
     left: 0;
 }
