@@ -22,3 +22,7 @@ body{
 .ch.2{
     font-size: 150%;
 }
+botton.btn{
+    width:6em;
+    height:3em;
+}
