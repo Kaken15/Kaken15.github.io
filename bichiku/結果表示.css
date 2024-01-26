@@ -2,22 +2,27 @@
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 20px; /* レスポンシブに適したパディングを追加 */
 }
-body{
-    background-color:#f7e8cd;
+
+body {
+  background-color: #f7e8cd;
+  margin: 0; /* ボディのマージンをリセット */
 }
-body{
+
+#list {
+  white-space: nowrap;
+}
+
+/* ウィンドウサイズに応じてbody要素を中央配置するスタイル */
+@media screen and (min-width: 768px) {
+  body {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-body{
-    border: 30Px solid rgb(94, 255, 0);
+    border: 30px solid rgb(94, 255, 0);
     padding: 40px;
     display: inline-block;
-}
-
-#list {
-    white-space: nowrap;
+  }
 }
