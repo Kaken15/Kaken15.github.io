@@ -112,7 +112,7 @@
         
     </header>
 
-
+<!--メインコンテンツ-->
     <main>
         <section id="home">
             <h2>ホーム</h2>
@@ -129,6 +129,31 @@
             <p>災害に備えるためのガイドやチェックリストをご覧いただけます。</p>
         </section>
     </main>
+
+    <!--レビュー-->
+<div id="tmp_feedback">
+  <div id="tmp_feedback_ttl">
+  <p>より良いウェブサイトにするためにみなさまのご意見をお聞かせください</p>
+  </div>
+  <div id="tmp_feedback_cnt">
+  <form action="/cgi-bin/feedback/feedback.cgi" id="feedback" method="post">
+  <p><input name="page_id" type="hidden" value="86744" /><input name="page_title" type="hidden" value="防災情報" /><input name="page_url" type="hidden" value="https://www.city.yokosuka.kanagawa.jp/0525/bousainavi/bousaijoho.html" /><input name="item_cnt" type="hidden" value="3" /></p>
+  <fieldset><legend>このページは分かりやすかったですか？ </legend>
+  <p><input id="que2_1" name="item_2" type="radio" value="分かりやすかった" /><label for="que2_1">1：分かりやすかった</label></p>
+  <p><input id="que2_2" name="item_2" type="radio" value="ふつう" /><label for="que2_2">2：ふつう</label></p>
+  <p><input id="que2_3" name="item_2" type="radio" value="分かりにくかった" /><label for="que2_3">3：分かりにくかった</label></p>
+  <p><input name="label_2" type="hidden" value="質問：このページは分かりやすかったですか？" /><input name="nes_2" type="hidden" value="1" /><input name="img_2" type="hidden" /><input name="img_alt_2" type="hidden" /><input name="mail_2" type="hidden" value="0" /></p>
+  </fieldset>
+  <fieldset><legend>このページは役に立ちましたか？ </legend>
+  <p><input id="que3_1" name="item_3" type="radio" value="役に立った" /><label for="que3_1">1：役に立った</label></p>
+  <p><input id="que3_2" name="item_3" type="radio" value="ふつう" /><label for="que3_2">2：ふつう</label></p>
+  <p><input id="que3_3" name="item_3" type="radio" value="役に立たなかった" /><label for="que3_3">3：役に立たなかった</label></p>
+  <p><input name="label_3" type="hidden" value="質問：このページは役に立ちましたか？" /><input name="nes_3" type="hidden" value="1" /><input name="img_3" type="hidden" /><input name="img_alt_3" type="hidden" /><input name="mail_3" type="hidden" value="0" /></p>
+  </fieldset>
+  <p class="submit_btn"><input type="submit" value="送信" /></p>
+  </form>
+  </div>
+  </div>
 
     <!--フッター-->
     <footer>
