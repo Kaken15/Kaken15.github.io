@@ -14,3 +14,15 @@ padding:2px 8px; /*余白の設定*/
     padding: 1em 2em;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
+#evacuation{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 1em 2em;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+#guide{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 1em 2em;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
