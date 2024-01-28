@@ -8,13 +8,6 @@ body {
   background-color: #f7e8cd;
   margin: 0; /* ボディのマージンをリセット */
 }
-body {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border: 30px solid rgb(128, 0, 128);
-    padding: 40px;
-    display: inline-block;
-}
+@media screen and (min-width: 768px) {
+ 
 
