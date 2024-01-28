@@ -1,5 +1,13 @@
-body{
-    background-color:#f7e8cd;
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px; /* レスポンシブに適したパディングを追加 */
+}
+
+body {
+  background-color: #f7e8cd;
+  margin: 0; /* ボディのマージンをリセット */
 }
 @media screen and (min-width: 768px) {
   body {
