@@ -1,10 +1,10 @@
+html{
+    background-color: rgb(255, 255, 255);
+}
 body{
     width: 960px;
     margin: auto;
-    border-left:1px solid #000000; /*線の設定*/
-padding:2px 8px; /*余白の設定*/
-border-right:1px solid #000000; /*線の設定*/
-padding:2px 8px; /*余白の設定*/
+
 
 }
 
@@ -32,6 +32,12 @@ footer{
     padding: 1em 2em;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
-
+#nu-footer__notice-item,
+#nu-footer__socials,
+#nu-footer__socials-button
+#nu-footer__socials-icon, 
+#gtm-social-footer-icon--facebook{
+  color: red;
+}
 
 
