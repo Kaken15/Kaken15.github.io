@@ -21,7 +21,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border: 30px solid rgb(94, 255, 0);
+    border: 30px solid rgb(0, 0, 0);
     padding: 40px;
     display: inline-block;
   }
