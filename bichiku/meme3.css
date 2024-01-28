@@ -19,7 +19,7 @@ display: none;
 /* ハンバーガーアイコンの設置スペース */
 .drawer_open {
 position: absolute;
-right: 504px;
+right: 30px;
 top: 90px;
 z-index: 100;
 cursor: pointer;
