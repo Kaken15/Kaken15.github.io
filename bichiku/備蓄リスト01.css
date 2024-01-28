@@ -4,8 +4,7 @@ body {
   background-color: #f7e8cd;
   margin: 0; /* ボディのマージンをリセット */
 }
-@media screen and (min-width: 768px) {
-  body {
+body {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -13,5 +12,5 @@ body {
     border: 30px solid rgb(128, 0, 128);
     padding: 40px;
     display: inline-block;
-  }
 }
+
