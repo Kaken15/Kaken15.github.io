@@ -26,13 +26,13 @@ const quiz = [
     {
         question:"普段からできる台風対策として正しいのはどれでしょうか？",
         correct:"側溝や排水溝の掃除をして水回りをよくする",
-        answers:["側溝や排水溝の掃除をして水回りをよくする", "外出や旅行を控える", "3.	台風に備えて、家財道具を高いところにうつす"],
+        answers:["側溝や排水溝の掃除をして水回りをよくする", "外出や旅行を控える", "家財道具を高いところにうつす","高いところに避難する"],
         image:"https://4.bp.blogspot.com/-xEnTQPMaMn8/UZmCFbnDzRI/AAAAAAAATbg/q5_K0il-h18/s800/shizensaigai_typhoon.png"
     },
     {
         question:"台風の影響で激しい雨が続いています。大雨で水が溢れ道路や床下に氾濫し始めました。複数人で避難する場合、次の選択肢の内どれが正しい行動でしょうか。",
         correct:"高齢者・子どもを真ん中に縦に一列になってゆっくり歩く",
-        answers:["車を避けるため道路の端を歩く", "元気な人を先頭に急ぎ足で歩く", "高齢者・子どもを真ん中に縦に一列になってゆっくり歩く"],
+        answers:["車を避けるため道路の端を歩く", "元気な人を先頭に急ぎ足で歩く", "高齢者・子どもを真ん中に縦に一列になってゆっくり歩く","横一列になって歩く"],
         image:"https://3.bp.blogspot.com/-1eWVEKfixZQ/VEETOABMZvI/AAAAAAAAobk/oBrup4MInEM/s800/tenki_boufuu.png"
     },
     {
