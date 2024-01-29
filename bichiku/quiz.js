@@ -75,7 +75,7 @@ const quiz_judge = function(){
         if(quizNow<quiz.length){
             quiz_start();
         }else{
-            document.getElementById("Q").textContent = "あなたは"+quiz.length+"中"+ok+"問正解でした";
+            document.getElementById("Q").textContent = "あなたは"+quiz.length+"問中"+ok+"問正解でした";
             if(ok==quiz.length){
                 document.getElementById("Q").textContent ="全問正解おめでとう！！！";
             }
