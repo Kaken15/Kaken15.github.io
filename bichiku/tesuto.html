@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar {
+      background-color: #333;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      padding: 15px;
+      display: inline-block;
+    }
+
+    .navbar a:hover {
+      background-color: #555;
+    }
+
+    #menu-icon {
+      display: none;
+      cursor: pointer;
+    }
+
+    #menu {
+      display: none;
+      text-align: left;
+      background-color: #333;
+      padding: 15px;
+    }
+
+    #menu a {
+      color: white;
+      text-decoration: none;
+      display: block;
+      padding: 10px;
+    }
+
+    #menu a:hover {
+      background-color: #555;
+    }
+
+    @media screen and (max-width: 600px) {
+      .navbar a {
+        display: none;
+      }
+
+      #menu-icon {
+        display: block;
+      }
+
+      #menu {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="navbar">
+  <div id="menu-icon">&#9776; Menu</div>
+  <div id="menu">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+</div>
+
+<script>
+  document.getElementById('menu-icon').addEventListener('click', function () {
+    var menu = document.getElementById('menu');
+    menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+  });
+</script>
+
+</body>
+</html>

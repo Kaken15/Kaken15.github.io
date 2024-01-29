@@ -1,0 +1,24 @@
+header{
+    width:100%;
+    height:100px;
+    background-color:#dcdcdc;
+    display:flex;
+    align-items:center;
+  }
+  
+  .box1{
+    background-color:blue;
+    width:200px;
+    text-align:center;
+    padding:20px 0;
+    color:white;
+  }
+  
+  button{
+    background-color:white;
+    border:none;
+    padding:10px 20px;
+  /* margin-rightをautoにすることで右寄せ出来ます */
+    margin:0 20px 0 auto;
+  }
+  

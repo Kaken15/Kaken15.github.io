@@ -25,6 +25,9 @@ body{
     color: rgb(0, 0, 0);
     padding: 1em 2em;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    a{
+        color: black;
+    }
 }
 footer{
     background-color: rgb(78, 78, 78);
@@ -46,6 +49,7 @@ footer{
 		0 0 0.1em rgba(255, 5, 5, 0.644),
 		0.01em 0.04em 0.03em rgba(255,255,255,0.4);
 	-webkit-background-clip : text;
+    text-decoration: none;
 }
 #tobu{
     font-size:1em;
@@ -58,5 +62,16 @@ footer{
 		0 0 0.1em rgba(255, 5, 5, 0.644),
 		0.01em 0.04em 0.03em rgba(255,255,255,0.4);
 	-webkit-background-clip : text;
+    text-decoration: none;
+}
+g{
+
+
+    path
+{
+    fill{
+        color: green;
+    }
 }
 
+}

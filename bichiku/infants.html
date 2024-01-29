@@ -2,18 +2,14 @@
 <html lang="ja">
     <head><meta charset="UTF-8">
         <title>課題研究　避難準備</title>
-        <link rel="stylesheet" href="infants.css">
+        
         
     </head>
     <body>
-        <div class="seru">
-            <img src="IMG_1972.png" alt="セルさん" width="200" height="200"> 
-        </div>
-        <h3 id="ch.1">備蓄品チェックリスト(1人あたりを想定しています)</h3>
-        <h4>～今、家にあるものにチェックしてね！～</h4>
-        <p>※(5日間以上を想定してください)</p>
+        <p><font color="blue">～備蓄リスト(1人あたりを想定しています)～</font><br>
+        <h3 id="ch.1">備蓄品チェック(5日間以上を想定してください)</h3>
         <div id="results"></div>
-            <table border="ch.1" class="ch.2" width="600" height="600">
+            <table border="ch.1" width="600" height="600">
                 <tr>
                     <td><label><input class="checks" type="checkbox"  value="水">水<br>(体重 10kg未満       100mL/kg体重<br>体重 10kg~20kg未満  1000mL+(10kg以上の体重分)×50mL/kg体重<br>体重 20kg以上       1500mL+(20kg以上の体重分)×20mL/kg体重)</label></td>
                     <td><label><input class="checks" type="checkbox"  value="タオル">タオル</label></td>
@@ -53,12 +49,15 @@
                 <tr>
                     <td><label><input class="checks" type="checkbox"  value="マスク">マスク</label></td>
                 </tr>
+                
+
+
+
+
+
+
             </table>
-        
-
-
-            <button id="btn">次へ</button>
+            <button id="btn">結果</button>
             <script src="infants.js"></script>
-    
     </body>
 </html>
