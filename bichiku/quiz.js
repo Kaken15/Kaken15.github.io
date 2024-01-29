@@ -46,15 +46,15 @@ const A = [
 const quiz_start = function(){
     document.getElementById("Q").textContent = quiz[quizNow].question;
 
-    for(let i=0; i<4; i++){
+    for(let i=0; i<A.length; i++){
         A[i].textContent = quiz[quizNow].answers[i];
     }
         document.getElementById("h").textContent=quizNow+1+"/"+quiz.length;
     }
 const quiz_judge = function(){
-    for(let i2=0; i2<4; i2++){
+    for(let i=0; i<A.length; i++){
     A[i2].addEventListener("click",function(){
-        if(quiz[quizNow].correct == quiz[quizNow].answers[i2]){
+        if(quiz[quizNow].correct == quiz[quizNow].correct){
             window.alert("正解");
             ok = ok+1;
         }else{
@@ -73,7 +73,7 @@ const quiz_judge = function(){
             
         }
         
-        document.write('<img src="https://www.sejuku.net/blog/wp-content/uploads/2017/10/voice_logo.png" alt="画像の解説文">')
+       
     });
     }
 }
