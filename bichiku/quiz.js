@@ -54,6 +54,9 @@ const quiz_start = function(){
     document.getElementById("Q").textContent = quiz[quizNow].question;
     document.getElementById("image").src=quiz[quizNow].image;
 
+    document.getElementById("image").style.display = "block";
+    document.getElementById("image").style.margin = "auto";
+
     for(let i=0; i<A.length; i++){
         A[i].textContent = quiz[quizNow].answers[i];
     }
