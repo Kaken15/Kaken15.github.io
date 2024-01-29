@@ -17,17 +17,18 @@ body {
 @media screen and (max-width: 767px) {
   body {
     padding: 20px; /* モバイルの場合のパディング */
+    position: static;
+    transform: none;
+    border: none;
+    display: block;
   }
 }
 /* デスクトップ用スタイル */
 @media screen and (min-width: 768px) {
   body {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border: 30px solid rgb(0, 0, 0);
-    padding: 40px;
-    display: inline-block;
+    position: static;
+    transform: none;
+    border: none;
+    padding: 20px; /* デスクトップの場合のパディング */
   }
 }
