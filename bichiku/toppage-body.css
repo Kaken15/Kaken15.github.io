@@ -32,6 +32,31 @@ footer{
     padding: 1em 2em;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
-
-
+#sekijyuuji{
+    border: double 5px #ff0000;
+}
+#bokin{
+    font-size:2em;
+	text-align:center;
+	line-height:0.95em;
+	font-weight:bold;
+	color: transparent;
+	background : rgba(0,0,0,1);
+	text-shadow : 
+		0 0 0.1em rgba(255, 5, 5, 0.644),
+		0.01em 0.04em 0.03em rgba(255,255,255,0.4);
+	-webkit-background-clip : text;
+}
+#tobu{
+    font-size:1em;
+	text-align:center;
+	line-height:0.95em;
+	font-weight:bold;
+	color: transparent;
+	background : rgba(0,0,0,1);
+	text-shadow : 
+		0 0 0.1em rgba(255, 5, 5, 0.644),
+		0.01em 0.04em 0.03em rgba(255,255,255,0.4);
+	-webkit-background-clip : text;
+}
 
