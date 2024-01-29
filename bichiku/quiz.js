@@ -52,9 +52,9 @@ const quiz_start = function(){
         document.getElementById("h").textContent=quizNow+1+"/"+quiz.length;
     }
 const quiz_judge = function(){
-    for(let i=0; i<A.length; i++){
+    for(let i2=0; i2<A.length; i2++){
     A[i2].addEventListener("click",function(){
-        if(quiz[quizNow].correct == quiz[quizNow].correct){
+        if(quiz[quizNow].correct == quiz[quizNow].answers[i2]){
             window.alert("正解");
             ok = ok+1;
         }else{
