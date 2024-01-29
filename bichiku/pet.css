@@ -1,49 +1,29 @@
-<!DOCTYPE html>
-<html lang="ja">
-    <head><meta charset="UTF-8">
-        <title>課題研究　避難準備</title>
-        <link rel="stylesheet" href="pet.css">
-        
-    </head>
-    <body>
-        <h3 id="ch.1">備蓄品チェックリスト(1人あたりを想定しています)</h3>
-        <h4>～今、家にあるものにチェックしてね！～</h4>
-        <p>※(5日間以上を想定してください)</p>
-        <div id="results"></div>
-            <table border="ch.1" width="600" height="600">
-                <tr>
-                    <td><label><input class="checks" type="checkbox"  value="水">水(目安:5~7日以上分)</label></td>
-                    <td><label><input class="checks" type="checkbox"  value="タオル">タオル</label></td>
-                </tr>
-                <tr>
-                    <td><label><input class="checks" type="checkbox"  value="毛布">毛布</label></td>
-                    <td><label><input class="checks" type="checkbox"  value="ペット用食料">ペット用食料(5~7日以上分)</label></td>
-                </tr>
-                <tr>
-                    <td><label><input class="checks" type="checkbox"  value="ビニール袋">ビニール袋</label></td>
-                    <td><label><input class="checks" type="checkbox"  value="ペット用雨具">ペット用雨具</label></td>
-                </tr>
-                <tr>
-                    <td><label><input class="checks" type="checkbox"  value="ペット ネームタグ">ネームタグ</label></td>
-                    <td><label><input class="checks" type="checkbox"  value="首輪">首輪</label></td>
-                </tr>
-                <tr>
-                    <td><label><input class="checks" type="checkbox"  value="ケージ">ケージ</label></td>
-                    <td><label><input class="checks" type="checkbox"  value="ペット用おもちゃ">おもちゃ</label></td>    
-                </tr>
-                <tr>
-                    <td><label><input class="checks" type="checkbox"  value="餌用容器">餌用容器</label></td>
-                    <td><label><input class="checks" type="checkbox"  value="ペット用トイレ用品">トイレ用品</label></td>
-                </tr>
-                
-
-
-
-
-
-
-            </table>
-            <button id="btn">結果</button>
-            <script src="pet.js"></script>
-    </body>
-</html>
+body{
+    background-color:#f7e8cd;
+}
+body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+body{
+    border: 30Px solid rgb(255, 0, 221);
+    padding: 40px;
+    display: inline-block;
+}
+block;
+}
+.seru{
+    text-align:right;
+}
+.ch.1{
+    border:solid #333 1px;
+}
+.ch.2{
+    font-size: 150%;
+}
+button.btn{
+    width:6em;
+    height:3em;
+}
