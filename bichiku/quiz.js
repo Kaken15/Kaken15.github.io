@@ -12,7 +12,7 @@ const quiz = [
         image:"https://1.bp.blogspot.com/-p_33bhZsyFI/XW87KSBsKHI/AAAAAAABUpI/q9xKrk3A71EQGzYCMyWjtoH-W6WMQda9gCLcBGAs/s1600/yuudou_hinan_people.png"
     },
     {
-        question:"地震発生時に家族とはなればなれになったときの集合場所。「集合場所にを細かく決めること」が重要とされています。避難場所は一か所だけでなくもう一カ所決めるべき、〇か×か？",
+        question:"地震発生時に家族とはなればなれになったときの集合場所。「集合場所を細かく決めること」が重要とされています。避難場所は一カ所だけでなくもう一カ所決めるべき、〇か×か？",
         correct:"〇",
         answers:["〇", "×"],
         image:"https://1.bp.blogspot.com/-_Mo8nPV2Bos/WydaErc262I/AAAAAAABMxw/P-oxub4mbPkOr-hC5EZgY81BcxmaF1OTwCLcBGAs/s800/saigai_maq_hinanjo.png"
@@ -36,7 +36,7 @@ const quiz = [
         image:"https://3.bp.blogspot.com/-1eWVEKfixZQ/VEETOABMZvI/AAAAAAAAobk/oBrup4MInEM/s800/tenki_boufuu.png"
     },
     {
-        question:"海外付近での津波の伝わる速さはどれくらい？",
+        question:"海岸付近での津波の伝わる速さはどれくらい？",
         correct:"時速40 km",
         answers:["時速20 km", "時速30 km", "時速40 km", "時速50　㎞"],
         image:"https://1.bp.blogspot.com/-3p9B_7sTMiY/UupGaR4cRXI/AAAAAAAAdbM/b9iA05X5oOU/s800/tsunami_nigeru.png"
