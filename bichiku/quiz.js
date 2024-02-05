@@ -73,10 +73,10 @@ const quiz_judge = function(){
     for(let i2=0; i2<A.length; i2++){
     A[i2].addEventListener("click",function(){
         if(quiz[quizNow].correct == quiz[quizNow].answers[i2]){
-            window.alert("正解\n\n解説：\n" + quiz[quizNow].explanation));
+            window.alert("正解\n\n解説：\n" + quiz[quizNow].explanation);
             ok = ok+1;
         }else{
-            window.alert("不正解\n\n解説：\n" + quiz[quizNow].explanation));
+            window.alert("不正解\n\n解説：\n" + quiz[quizNow].explanation);
         }
         quizNow++;
         if(quizNow<quiz.length){
